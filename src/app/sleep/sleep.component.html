@@ -1,0 +1,12 @@
+<div class="control-section">
+  <button (click)="selectedValueDay()" id="day">Day</button>
+  <button (click)="selectedValueWeek()">Week</button>
+  <button (click)="selectedValueMonth()">Month</button>
+  <button (click)="selectedValueYear()">Year</button>
+</div>
+
+<div class="graphbar">
+  <div *ngIf="chart">
+    <canvas id="canvas" width="1000px" height="500px">{{ chart }}</canvas>
+  </div>
+</div>
